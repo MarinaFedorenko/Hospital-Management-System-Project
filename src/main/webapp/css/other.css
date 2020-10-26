@@ -1,0 +1,30 @@
+.banner{
+    padding-top: 0;
+    width: 100%;
+    height:80px;
+    /*border: white 5px solid;*/
+    background-color: cadetblue;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.intro {
+    width:100%;
+    position:relative;
+}
+.intro-content {
+    padding:200px 0 60px;
+}
+
+.intro-content h2 {
+    margin-bottom: 10px;
+}
+.container{width:1170px}
+.table{width:100%;max-width:100%;margin-bottom:20px}
+
+
+

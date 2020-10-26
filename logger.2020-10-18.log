@@ -1,0 +1,198 @@
+18.10.2020 22:05:37.178 [http-bio-8080-exec-6] INFO   n.s.LoginServlet - Execute doGet method in LoginServlet
+18.10.2020 22:05:39.873 [http-bio-8080-exec-7] INFO   n.s.LoginServlet - Execute doPost method in LoginServlet
+18.10.2020 22:05:40.343 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:05:40.456 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+18.10.2020 22:05:42.785 [http-bio-8080-exec-9] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:05:42.794 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:05:42.798 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:05:47.098 [http-bio-8080-exec-4] INFO   n.s.EditDoctorServlet - Execute doGet method in EditDoctorServlet
+18.10.2020 22:05:47.109 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:05:47.111 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - UserDao.java:  method findById is executed
+18.10.2020 22:06:05.587 [http-bio-8080-exec-4] INFO   n.s.EditDoctorServlet - Execute doPost method in EditDoctorServlet
+18.10.2020 22:06:05.599 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:07:44.794 [http-bio-8080-exec-3] INFO   n.s.LoginServlet - Execute doGet method in LoginServlet
+18.10.2020 22:07:47.258 [http-bio-8080-exec-4] INFO   n.s.LoginServlet - Execute doPost method in LoginServlet
+18.10.2020 22:07:47.758 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:07:47.876 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+18.10.2020 22:07:50.147 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:07:50.154 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:07:50.158 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:07:52.785 [http-bio-8080-exec-7] INFO   n.s.EditDoctorServlet - Execute doGet method in EditDoctorServlet
+18.10.2020 22:07:52.794 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:07:52.797 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - UserDao.java:  method findById is executed
+18.10.2020 22:08:07.544 [http-bio-8080-exec-9] INFO   n.s.EditDoctorServlet - Execute doPost method in EditDoctorServlet
+18.10.2020 22:08:07.557 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:08:07.562 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - UserDao.java:  method update is executed
+18.10.2020 22:08:07.567 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:08:07.574 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:08:07.577 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:12:38.860 [http-bio-8080-exec-4] INFO   n.s.LoginServlet - Execute doGet method in LoginServlet
+18.10.2020 22:12:42.491 [http-bio-8080-exec-5] INFO   n.s.LoginServlet - Execute doPost method in LoginServlet
+18.10.2020 22:12:42.909 [http-bio-8080-exec-5] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:12:43.017 [http-bio-8080-exec-5] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+18.10.2020 22:12:45.533 [http-bio-8080-exec-7] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:12:45.543 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:12:45.547 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:12:47.289 [http-bio-8080-exec-8] INFO   n.s.EditDoctorServlet - Execute doGet method in EditDoctorServlet
+18.10.2020 22:12:47.295 [http-bio-8080-exec-8] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:12:47.297 [http-bio-8080-exec-8] INFO   nix.dao.UserDao - UserDao.java:  method findById is executed
+18.10.2020 22:13:09.221 [http-bio-8080-exec-10] INFO   n.s.EditDoctorServlet - Execute doPost method in EditDoctorServlet
+18.10.2020 22:13:09.230 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:13:09.310 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method update is executed
+18.10.2020 22:13:09.315 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:13:09.319 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:13:09.322 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:15:41.775 [http-bio-8080-exec-3] INFO   n.s.LoginServlet - Execute doGet method in LoginServlet
+18.10.2020 22:15:44.415 [http-bio-8080-exec-4] INFO   n.s.LoginServlet - Execute doPost method in LoginServlet
+18.10.2020 22:15:44.841 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:15:44.909 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+18.10.2020 22:15:47.174 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:15:47.184 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:15:47.186 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:15:51.726 [http-bio-8080-exec-7] INFO   n.s.EditDoctorServlet - Execute doGet method in EditDoctorServlet
+18.10.2020 22:15:51.737 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:15:51.741 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - UserDao.java:  method findById is executed
+18.10.2020 22:16:01.506 [http-bio-8080-exec-9] INFO   n.s.EditDoctorServlet - Execute doPost method in EditDoctorServlet
+18.10.2020 22:16:01.519 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:16:01.525 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - UserDao.java:  method update is executed
+18.10.2020 22:16:01.535 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:16:01.541 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:16:01.544 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:25:54.132 [http-bio-8080-exec-3] INFO   n.s.LoginServlet - Execute doGet method in LoginServlet
+18.10.2020 22:25:56.582 [http-bio-8080-exec-4] INFO   n.s.LoginServlet - Execute doPost method in LoginServlet
+18.10.2020 22:25:57.040 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:25:57.186 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+18.10.2020 22:25:59.296 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:25:59.304 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:25:59.308 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:26:03.074 [http-bio-8080-exec-7] INFO   n.s.EditDoctorServlet - Execute doGet method in EditDoctorServlet
+18.10.2020 22:26:03.081 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:26:03.084 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - UserDao.java:  method findById is executed
+18.10.2020 22:26:15.208 [http-bio-8080-exec-9] INFO   n.s.EditDoctorServlet - Execute doPost method in EditDoctorServlet
+18.10.2020 22:26:15.221 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:26:15.225 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - UserDao.java:  method update is executed
+18.10.2020 22:26:15.231 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:26:15.238 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:26:15.243 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:26:18.532 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doPost method in DoctorListServlet
+18.10.2020 22:26:18.539 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:26:18.541 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:40:36.786 [main] INFO   nix.Main - connected to database
+18.10.2020 22:48:05.148 [http-bio-8080-exec-3] INFO   n.s.LoginServlet - Execute doGet method in LoginServlet
+18.10.2020 22:48:07.984 [http-bio-8080-exec-4] INFO   n.s.LoginServlet - Execute doPost method in LoginServlet
+18.10.2020 22:48:08.410 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:48:08.487 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+18.10.2020 22:48:10.528 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:48:10.536 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:48:10.538 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:48:12.684 [http-bio-8080-exec-9] INFO   n.s.EditDoctorServlet - Execute doGet method in EditDoctorServlet
+18.10.2020 22:48:12.692 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:48:12.695 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - UserDao.java:  method findById is executed
+18.10.2020 22:48:47.109 [http-bio-8080-exec-10] INFO   n.s.EditDoctorServlet - Execute doPost method in EditDoctorServlet
+18.10.2020 22:48:47.122 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:48:47.128 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method update is executed
+18.10.2020 22:48:47.133 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:48:47.139 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:48:47.143 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:49:11.692 [http-bio-8080-exec-10] INFO   n.s.EditDoctorServlet - Execute doGet method in EditDoctorServlet
+18.10.2020 22:49:11.703 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:49:11.705 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findById is executed
+18.10.2020 22:49:18.504 [http-bio-8080-exec-10] INFO   n.s.EditDoctorServlet - Execute doPost method in EditDoctorServlet
+18.10.2020 22:49:18.510 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:49:18.518 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method update is executed
+18.10.2020 22:49:18.524 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 22:49:18.530 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:49:18.535 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 22:49:34.695 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doPost method in DoctorListServlet
+18.10.2020 22:49:34.704 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:49:34.706 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByLastnameRoleId is executed
+18.10.2020 22:49:37.925 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doPost method in DoctorListServlet
+18.10.2020 22:49:37.935 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 22:49:37.937 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:19:35.006 [main] INFO   nix.Main - connected to database
+18.10.2020 23:21:55.233 [http-bio-8080-exec-3] INFO   n.s.LoginServlet - Execute doGet method in LoginServlet
+18.10.2020 23:21:58.438 [http-bio-8080-exec-4] INFO   n.s.LoginServlet - Execute doPost method in LoginServlet
+18.10.2020 23:21:58.841 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:21:58.934 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+18.10.2020 23:22:01.268 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 23:22:01.277 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:22:01.280 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:22:08.298 [http-bio-8080-exec-7] INFO   n.s.EditDoctorServlet - Execute doGet method in EditDoctorServlet
+18.10.2020 23:22:08.304 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:22:08.308 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - UserDao.java:  method findById is executed
+18.10.2020 23:22:29.378 [http-bio-8080-exec-9] INFO   n.s.EditDoctorServlet - Execute doPost method in EditDoctorServlet
+18.10.2020 23:22:29.394 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:22:29.400 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - UserDao.java:  method update is executed
+18.10.2020 23:22:29.406 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 23:22:29.411 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:22:29.414 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:22:31.966 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doPost method in DoctorListServlet
+18.10.2020 23:22:31.973 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:22:31.975 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:24:34.825 [http-bio-8080-exec-3] INFO   n.s.LoginServlet - Execute doGet method in LoginServlet
+18.10.2020 23:24:37.453 [http-bio-8080-exec-4] INFO   n.s.LoginServlet - Execute doPost method in LoginServlet
+18.10.2020 23:24:37.838 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:24:37.906 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+18.10.2020 23:24:40.329 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 23:24:40.338 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:24:40.341 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:24:41.652 [http-bio-8080-exec-7] INFO   n.s.EditDoctorServlet - Execute doGet method in EditDoctorServlet
+18.10.2020 23:24:41.660 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:24:41.662 [http-bio-8080-exec-7] INFO   nix.dao.UserDao - UserDao.java:  method findById is executed
+18.10.2020 23:24:57.341 [http-bio-8080-exec-9] INFO   n.s.EditDoctorServlet - Execute doPost method in EditDoctorServlet
+18.10.2020 23:24:57.364 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:24:57.372 [http-bio-8080-exec-9] INFO   nix.dao.UserDao - UserDao.java:  method update is executed
+18.10.2020 23:24:57.378 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 23:24:57.384 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:24:57.388 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:32:10.773 [http-bio-8080-exec-3] INFO   n.s.LoginServlet - Execute doGet method in LoginServlet
+18.10.2020 23:32:13.378 [http-bio-8080-exec-4] INFO   n.s.LoginServlet - Execute doPost method in LoginServlet
+18.10.2020 23:32:13.782 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:32:13.856 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+18.10.2020 23:32:16.038 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 23:32:16.045 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:32:16.048 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:32:18.070 [http-bio-8080-exec-8] INFO   n.s.EditDoctorServlet - Execute doGet method in EditDoctorServlet
+18.10.2020 23:32:18.077 [http-bio-8080-exec-8] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:32:18.081 [http-bio-8080-exec-8] INFO   nix.dao.UserDao - UserDao.java:  method findById is executed
+18.10.2020 23:32:25.538 [http-bio-8080-exec-10] INFO   n.s.EditDoctorServlet - Execute doPost method in EditDoctorServlet
+18.10.2020 23:32:25.551 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:32:25.566 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method update is executed
+18.10.2020 23:32:25.571 [http-bio-8080-exec-10] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 23:32:25.575 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:32:25.578 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:32:39.999 [http-bio-8080-exec-10] INFO   n.s.EditDoctorServlet - Execute doGet method in EditDoctorServlet
+18.10.2020 23:32:40.005 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:32:40.007 [http-bio-8080-exec-10] INFO   nix.dao.UserDao - UserDao.java:  method findById is executed
+18.10.2020 23:32:51.623 [http-bio-8080-exec-6] INFO   n.s.EditDoctorServlet - Execute doPost method in EditDoctorServlet
+18.10.2020 23:32:51.632 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:32:51.647 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method update is executed
+18.10.2020 23:32:51.652 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+18.10.2020 23:32:51.657 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:32:51.660 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:33:04.933 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doPost method in DoctorListServlet
+18.10.2020 23:33:56.095 [http-bio-8080-exec-6] INFO   n.s.AddDoctorServlet - Execute doPost method in AddDoctorServlet
+18.10.2020 23:33:56.107 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:33:56.116 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method insert is executed
+18.10.2020 23:33:59.917 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doPost method in DoctorListServlet
+18.10.2020 23:33:59.925 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:33:59.928 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:34:17.025 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doPost method in DoctorListServlet
+18.10.2020 23:34:17.034 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:34:17.040 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method delete is executed
+18.10.2020 23:34:17.048 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:34:17.052 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:34:51.215 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doPost method in DoctorListServlet
+18.10.2020 23:35:36.850 [http-bio-8080-exec-6] INFO   n.s.AddDoctorServlet - Execute doPost method in AddDoctorServlet
+18.10.2020 23:35:36.855 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:35:36.860 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method insert is executed
+18.10.2020 23:35:56.188 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doPost method in DoctorListServlet
+18.10.2020 23:35:56.196 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:35:56.199 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+18.10.2020 23:36:08.886 [http-bio-8080-exec-6] INFO   n.s.DoctorListServlet - Execute doPost method in DoctorListServlet
+18.10.2020 23:36:08.894 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:36:08.898 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method delete is executed
+18.10.2020 23:36:08.905 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:36:08.907 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method delete is executed
+18.10.2020 23:36:08.912 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - connected to database
+18.10.2020 23:36:08.914 [http-bio-8080-exec-6] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
