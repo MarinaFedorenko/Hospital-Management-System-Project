@@ -9,59 +9,59 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PatientDao extends Configs implements Dao<Patient>{
+public class PatientDao extends Dao<Patient>{
     private static final Logger logger = LoggerFactory.getLogger(PatientDao.class);
 
-    private static Connection connection = null;
-    private static PreparedStatement preparedStatement = null;
-    private static ResultSet rs = null;
+//    private static Connection connection = null;
+//    private static PreparedStatement preparedStatement = null;
+//    private static ResultSet rs = null;
 
     public PatientDao() {}
 
-    public Connection getConnection() {
-        Connection connection = null;
-
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection(URL, dbUser, dbPass);
-
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        logger.info("connected to database" );
-        return connection;
-    }
-
-    private void closeResources(Connection connection, PreparedStatement preparedStatement, ResultSet resultSet){
-        try {
-            rs.close();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-        try {
-            preparedStatement.close();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-        try {
-            connection.close();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-    }
-
-    private void closeResources(Connection connection, PreparedStatement preparedStatement) {
-        try {
-            rs.close();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-        try {
-            preparedStatement.close();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-    }
+//    public Connection getConnection() {
+//        Connection connection = null;
+//
+//        try {
+//            Class.forName("com.mysql.cj.jdbc.Driver");
+//            connection = DriverManager.getConnection(URL, dbUser, dbPass);
+//
+//        } catch (SQLException | ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//        logger.info("connected to database" );
+//        return connection;
+//    }
+//
+//    private void closeResources(Connection connection, PreparedStatement preparedStatement, ResultSet resultSet){
+//        try {
+//            rs.close();
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//        try {
+//            preparedStatement.close();
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//        try {
+//            connection.close();
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//    }
+//
+//    private void closeResources(Connection connection, PreparedStatement preparedStatement) {
+//        try {
+//            rs.close();
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//        try {
+//            preparedStatement.close();
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//    }
 
     @Override
     public Patient findById(Long id) {

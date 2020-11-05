@@ -40,6 +40,7 @@ public class ReceptionistListServlet extends HttpServlet {
 
         List<User> receptionists = new ArrayList<>();
         if(request.getParameter("search")!=null){
+            cleanPrompts(request);
             String lastName = request.getParameter("lastname").trim();
             String phoneNumber = request.getParameter("phonenumber").trim();
             boolean validLastName = true;
@@ -61,7 +62,7 @@ public class ReceptionistListServlet extends HttpServlet {
                         setPage(receptionists, request, response);
                         return;
                     } else{// ни фамилия ни телефон не валидны
-                        request.setAttribute("falseLastname", "invalid last name");
+                        request.setAttribute("falseLastname", "invalid lastname");
                         request.setAttribute("falsePhonenumber", "invalid phone number");
                         setPage(receptionists, request, response);
                         return;
@@ -73,7 +74,7 @@ public class ReceptionistListServlet extends HttpServlet {
                         setPage(receptionists, request, response);
                         return;
                     } else {
-                        request.setAttribute("falseLastname", "invalid last name");
+                        request.setAttribute("falseLastname", "invalid lastname");
                         setPage(receptionists, request, response);
                         return;
                     }
@@ -101,10 +102,12 @@ public class ReceptionistListServlet extends HttpServlet {
             return;
         }
         else if (request.getParameter("new")!=null){
+            cleanPrompts(request);
             request.getRequestDispatcher(Links.RECEPTIONIST_JSP).forward(request, response);
             return;
         }
         else if(request.getParameter("delete")!=null){}{
+            cleanPrompts(request);
             String[] ids = request.getParameterValues("receptionistIds");
             boolean deleted = true;
             if (ids != null && ids.length > 0) {

@@ -9,38 +9,73 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RoleDao extends Configs implements Dao<Role> {
+public class RoleDao extends  Dao<Role> {
     private static final Logger logger = LoggerFactory.getLogger(RoleDao.class);
 
+//    private static Connection connection = null;
+//    private static PreparedStatement preparedStatement = null;
+//    private static ResultSet rs = null;
 
     public RoleDao() {}
 
-    public Connection getConnection() {
-        Connection connection = null;
-
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection(URL, dbUser, dbPass);
-
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        logger.info("connected to database" );
-
-        return connection;
-    }
+//    public Connection getConnection() {
+//        Connection connection = null;
+//
+//        try {
+//            Class.forName("com.mysql.cj.jdbc.Driver");
+//            connection = DriverManager.getConnection(URL, dbUser, dbPass);
+//
+//        } catch (SQLException | ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//        logger.info("connected to database" );
+//
+//        return connection;
+//    }
+//
+//    private void closeResources(Connection connection, PreparedStatement preparedStatement, ResultSet resultSet){
+//        try {
+//            rs.close();
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//        try {
+//            preparedStatement.close();
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//        try {
+//            connection.close();
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//    }
+//
+//    private void closeResources(Connection connection, PreparedStatement preparedStatement) {
+//        try {
+//            rs.close();
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//        try {
+//            preparedStatement.close();
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//    }
 
     @Override
     public Role findById(Long id) {
         Role role = null;
 
-        try (Connection connection = getConnection();
+        try  {
+            connection = getConnection();
 
-             PreparedStatement preparedStatement = connection
-                     .prepareStatement(" select * from hospitalmanagement.roles where id =? ;");) {
+            preparedStatement = connection
+                    .prepareStatement(" select * from hospitalmanagement.roles where id =? ;");
             preparedStatement.setLong(1, id);
 
-            ResultSet rs = preparedStatement.executeQuery();
+            rs = preparedStatement.executeQuery();
 
             while (rs.next()) {
                 Long roleId = rs.getLong("id");
@@ -56,6 +91,8 @@ public class RoleDao extends Configs implements Dao<Role> {
             }
         } catch (SQLException  e) {
             e.printStackTrace();
+        }finally {
+            closeResources(connection, preparedStatement, rs);
         }
         logger.info("RoleDao.java:  method findById is executed");
 
@@ -65,10 +102,11 @@ public class RoleDao extends Configs implements Dao<Role> {
     @Override
     public List<Role> findAll() {
         List<Role> roles = new ArrayList<>();
-        try (Connection connection = getConnection();
+        try  {
+            connection = getConnection();
 
-             PreparedStatement preparedStatement = connection.prepareStatement(" select * from roles ;");) {
-            ResultSet rs = preparedStatement.executeQuery();
+            preparedStatement = connection.prepareStatement(" select * from roles ;");
+            rs = preparedStatement.executeQuery();
 
             while (rs.next()) {
                 Long roleId = rs.getLong("id");
@@ -84,6 +122,8 @@ public class RoleDao extends Configs implements Dao<Role> {
             }
         } catch (SQLException  e) {
             e.printStackTrace();
+        }finally {
+            closeResources(connection, preparedStatement, rs);
         }
         logger.info("RoleDao.java:  method findAll is executed");
 
@@ -95,23 +135,26 @@ public class RoleDao extends Configs implements Dao<Role> {
     @Override
     public boolean update(Role role) {
         boolean updated = false;
-        try (Connection connection = getConnection();
-             PreparedStatement statement = connection
-                     .prepareStatement(" update hospitalmanagement.roles " +
-                             "set name= ?, description =?, createdBy=?," +
-                             "modifiedBy=?, createdDatetime=?, modifiedDatetime=? " +
-                             "where id = ?; ");) {
-            statement.setString(1, role.getName());
-            statement.setString(2, role.getDescription());
-            statement.setString(3, role.getCreatedBy());
-            statement.setString(4, role.getModifiedBy());
-            statement.setTimestamp(5, role.getCreatedDatetime());
-            statement.setTimestamp(6, role.getModifiedDatetime());
-            statement.setLong(7, role.getId());
+        try  {
+            connection = getConnection();
+            preparedStatement = connection
+                    .prepareStatement(" update hospitalmanagement.roles " +
+                            "set name= ?, description =?, createdBy=?," +
+                            "modifiedBy=?, createdDatetime=?, modifiedDatetime=? " +
+                            "where id = ?; ");
+            preparedStatement.setString(1, role.getName());
+            preparedStatement.setString(2, role.getDescription());
+            preparedStatement.setString(3, role.getCreatedBy());
+            preparedStatement.setString(4, role.getModifiedBy());
+            preparedStatement.setTimestamp(5, role.getCreatedDatetime());
+            preparedStatement.setTimestamp(6, role.getModifiedDatetime());
+            preparedStatement.setLong(7, role.getId());
 
-            updated = statement.executeUpdate() > 0;
+            updated = preparedStatement.executeUpdate() > 0;
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+        }finally {
+            closeResources(connection, preparedStatement);
         }
         logger.info("RoleDao.java:  method update is executed");
 
@@ -121,12 +164,15 @@ public class RoleDao extends Configs implements Dao<Role> {
     @Override
     public boolean delete(Role role) {
         boolean deleted = false;
-        try (Connection connection = getConnection();
-             PreparedStatement statement = connection.prepareStatement(" delete from hospitalmanagement.roles where id = ?; ");) {
-            statement.setLong(1, role.getId());
-            deleted = statement.executeUpdate() > 0;
+        try {
+            connection = getConnection();
+            preparedStatement = connection.prepareStatement(" delete from hospitalmanagement.roles where id = ?; ");
+            preparedStatement.setLong(1, role.getId());
+            deleted = preparedStatement.executeUpdate() > 0;
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+        }finally {
+            closeResources(connection, preparedStatement);
         }
         logger.info("RoleDao.java:  method delete is executed");
 
@@ -135,21 +181,24 @@ public class RoleDao extends Configs implements Dao<Role> {
 
     @Override
     public void insert(Role role){
-            try (Connection connection = getConnection();
-        PreparedStatement statement = connection
-                .prepareStatement("INSERT INTO hospitalmanagement.roles (name, description, createdBy,modifiedBy," +
-                        "                        createdDatetime,modifiedDatetime) VALUES (?,?,?,?,?,?);")) {
-            statement.setString(1, role.getName());
-            statement.setString(2, role.getDescription());
-            statement.setString(3, role.getCreatedBy());
-            statement.setString(4, role.getModifiedBy());
-            statement.setTimestamp(5, role.getCreatedDatetime());
-            statement.setTimestamp(6, role.getModifiedDatetime());
+            try  {
+                connection = getConnection();
+                preparedStatement = connection
+                        .prepareStatement("INSERT INTO hospitalmanagement.roles (name, description, createdBy,modifiedBy," +
+                                "                        createdDatetime,modifiedDatetime) VALUES (?,?,?,?,?,?);");
+                preparedStatement.setString(1, role.getName());
+                preparedStatement.setString(2, role.getDescription());
+                preparedStatement.setString(3, role.getCreatedBy());
+                preparedStatement.setString(4, role.getModifiedBy());
+                preparedStatement.setTimestamp(5, role.getCreatedDatetime());
+                preparedStatement.setTimestamp(6, role.getModifiedDatetime());
 
-            statement.executeUpdate();
+                preparedStatement.executeUpdate();
             logger.info("RoleDao.java:  method insert is executed");
             } catch (SQLException  e) {
             e.printStackTrace();
-        }
+        } finally {
+                closeResources(connection, preparedStatement);
+            }
     }
 }

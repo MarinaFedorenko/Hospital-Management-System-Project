@@ -49,6 +49,7 @@ public class AppointmentListServlet extends HttpServlet{
         PatientDao patientDao = new PatientDao();
 
         if(request.getParameter("search")!=null){
+            cleanPrompts(request);
             String doctorLastName = request.getParameter("doctor").trim();
             String patientLastName = request.getParameter("patient").trim();
             boolean validDoctorLastName = true;
@@ -80,6 +81,7 @@ public class AppointmentListServlet extends HttpServlet{
                         setPage(appointments, request, response);
                         return;
                     } else if(validDoctorLastName){
+                        request.setAttribute("falsePatient", "invalid patient lastname");
                         List<User> doctors = userDao.findAllByLastnameRoleId(doctorLastName, (long)3);
                         List <Long >doctorIds = new ArrayList(doctors.size());
                         List<Appointment> results = null;
@@ -95,6 +97,7 @@ public class AppointmentListServlet extends HttpServlet{
                         setPage(appointments, request, response);
                         return;
                     } else if (validPatientLastName){
+                        request.setAttribute("falseDoctor", "invalid doctor lastname");
                         List<Patient> patients = patientDao.findAllByLastname(patientLastName);
                         List <Long >patientIds = new ArrayList(patients.size());
                         List<Appointment> results = null;
@@ -110,8 +113,8 @@ public class AppointmentListServlet extends HttpServlet{
                         setPage(appointments, request, response);
                         return;
                     } else{
-                        request.setAttribute("falseDoctor", "invalid doctor last name");
-                        request.setAttribute("falsePatient", "invalid patient last name");
+                        request.setAttribute("falseDoctor", "invalid doctor lastname");
+                        request.setAttribute("falsePatient", "invalid patient lastname");
                         setPage(appointments, request, response);
                         return;
                     }
@@ -133,7 +136,7 @@ public class AppointmentListServlet extends HttpServlet{
                         setPage(appointments, request, response);
                         return;
                     } else {
-                        request.setAttribute("falseDoctor", "invalid doctor last name");
+                        request.setAttribute("falseDoctor", "invalid doctor lastname");
                         setPage(appointments, request, response);
                         return;
                     }
@@ -155,7 +158,7 @@ public class AppointmentListServlet extends HttpServlet{
                         setPage(appointments, request, response);
                         return;
                     } else {
-                        request.setAttribute("falsePatient", "invalid patient last name");
+                        request.setAttribute("falsePatient", "invalid patient lastname");
                         setPage(appointments, request, response);
                         return;
                     }
@@ -167,17 +170,18 @@ public class AppointmentListServlet extends HttpServlet{
 
         }
         else if(request.getParameter("findAll")!=null){
-
-            appointments = appointmentDao.findAll();
             cleanPrompts(request);
+            appointments = appointmentDao.findAll();
             setPage(appointments, request, response);
             return;
         }
         else if (request.getParameter("new")!=null){
+            cleanPrompts(request);
             request.getRequestDispatcher(Links.APPOINTMENT_JSP).forward(request, response);
             return;
         }
         else if(request.getParameter("delete")!=null){}{
+            cleanPrompts(request);
             String[] ids = request.getParameterValues("appointmentsIds");
             boolean deleted = true;
             if (ids != null && ids.length > 0) {

@@ -67,9 +67,9 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td style="border: 0px"><input type="text" name="doctor"
+                        <td style="border: 0px"><input type="text" name="doctor" placeholder="Enter Last Name"
                                                        class="form-control input-md"></td>
-                        <td style="border: 0px"><input type="text" name="patient"
+                        <td style="border: 0px"><input type="text" name="patient" placeholder="Enter Last Name"
                                                        class="form-control input-md"></td>
                         <td style = "border: 0px"><input type="submit" class="btn" name="search" value="Search"></td>
                         <td style ="border: 0px"><input type="submit" class="btn" name="findAll" value="Find All"></td>
@@ -80,14 +80,14 @@
 
 
                 <div style="text-align: center;">
-                    <b><span style="color: red; ">${falseDoctor}</span></b>
-                    <b><span style="color: red; ">${falsePatient}</span></b>
-                    <b><span style="color: green; ">${successUpdate}</span></b>
-                    <b><span style="color: green; ">${successInsert}</span></b>
-                    <b><span style="color: green; ">${successDelete}</span></b>
-                    <b><span style="color: red; ">${failureUpdate}</span></b>
-                    <b><span style="color: red; ">${failureInsert}</span></b>
-                    <b><span style="color: red; ">${failureDelete}</span></b>
+                    <b><span style="color: red; "> ${falseDoctor} </span></b>
+                    <b><span style="color: red; "> ${falsePatient} </span></b>
+                    <b><span style="color: green; "> ${successUpdate} </span></b>
+                    <b><span style="color: green; "> ${successInsert} </span></b>
+                    <b><span style="color: green; "> ${successDelete} </span></b>
+                    <b><span style="color: red; "> ${failureUpdate} </span></b>
+                    <b><span style="color: red; "> ${failureInsert} </span></b>
+                    <b><span style="color: red; "> ${failureDelete} </span></b>
 
                 </div>
 

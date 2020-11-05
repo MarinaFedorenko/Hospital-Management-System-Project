@@ -41,6 +41,7 @@ public class DoctorListServlet extends HttpServlet {
 
         List<User> doctors = new ArrayList<>();
         if(request.getParameter("search")!=null){
+            cleanPrompts(request);
             String lastName = request.getParameter("lastname").trim();
             String phoneNumber = request.getParameter("phonenumber").trim();
             boolean validLastName = true;
@@ -55,14 +56,16 @@ public class DoctorListServlet extends HttpServlet {
                         return;
                     } else if(validLastName){ // только фамилия валидна
                         doctors = userDao.findAllByLastnameRoleId(lastName,(long)3);
+                        request.setAttribute("falsePhonenumber", "invalid phone number");
                         setPage(doctors, request, response);
                         return;
                     } else if (validPhoneNumber){// только номер телефона валиден
                         doctors = userDao.findAllByPhonenumberRoleId(phoneNumber,(long)3);
+                        request.setAttribute("falseLastname", "invalid lastname");
                         setPage(doctors, request, response);
                         return;
                     } else{// ни фамилия ни телефон не валидны
-                        request.setAttribute("falseLastname", "invalid last name");
+                        request.setAttribute("falseLastname", "invalid lastname");
                         request.setAttribute("falsePhonenumber", "invalid phone number");
                         setPage(doctors, request, response);
                         return;
@@ -74,7 +77,7 @@ public class DoctorListServlet extends HttpServlet {
                         setPage(doctors, request, response);
                         return;
                     } else {
-                        request.setAttribute("falseLastname", "invalid last name");
+                        request.setAttribute("falseLastname", "invalid lastname");
                         setPage(doctors, request, response);
                         return;
                     }
@@ -103,10 +106,12 @@ public class DoctorListServlet extends HttpServlet {
             return;
         }
         else if (request.getParameter("new")!=null){
+            cleanPrompts(request);
             request.getRequestDispatcher(Links.DOCTOR_JSP).forward(request, response);
             return;
         }
         else if(request.getParameter("delete")!=null){}{
+            cleanPrompts(request);
             String[] ids = request.getParameterValues("doctorIds");
             boolean deleted = true;
             if (ids != null && ids.length > 0) {

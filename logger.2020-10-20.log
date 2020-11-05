@@ -1,0 +1,22 @@
+20.10.2020 11:55:11.514 [main] INFO   n.s.AddPatientServlet - Execute doGet method in AddPatientServlet
+20.10.2020 11:55:11.546 [main] INFO   n.s.AddDoctorServlet - Execute doGet method in AddDoctorServlet
+20.10.2020 11:55:11.554 [main] INFO   n.s.AddAppointmentServlet - Execute doGet method in AddAppointmentServlet
+20.10.2020 11:55:11.562 [main] INFO   n.s.AddReceptionistServlet - Execute doGet method in AddReceptionistServlet
+20.10.2020 11:55:31.938 [http-bio-8080-exec-7] INFO   n.s.LoginServlet - Execute doGet method in LoginServlet
+20.10.2020 11:55:37.614 [http-bio-8080-exec-4] INFO   n.s.LoginServlet - Execute doPost method in LoginServlet
+20.10.2020 11:55:38.291 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - connected to database
+20.10.2020 11:55:38.437 [http-bio-8080-exec-4] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+20.10.2020 11:56:23.588 [http-bio-8080-exec-5] INFO   n.s.LogoutServlet - Execute doGet method in LogoutServlet
+20.10.2020 11:56:30.775 [http-bio-8080-exec-5] INFO   n.s.LoginServlet - Execute doPost method in LoginServlet
+20.10.2020 11:56:30.791 [http-bio-8080-exec-5] INFO   nix.dao.UserDao - connected to database
+20.10.2020 11:56:30.799 [http-bio-8080-exec-5] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+20.10.2020 11:56:42.413 [http-bio-8080-exec-5] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+20.10.2020 11:56:42.421 [http-bio-8080-exec-5] INFO   nix.dao.UserDao - connected to database
+20.10.2020 11:56:42.429 [http-bio-8080-exec-5] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed
+20.10.2020 11:57:08.319 [http-bio-8080-exec-5] INFO   n.s.HomeServlet - Execute doGet method in HomeServlet
+20.10.2020 11:57:16.530 [http-bio-8080-exec-5] INFO   n.s.MyProfileServlet - Execute doGet method in ProfileServlet
+20.10.2020 11:57:16.538 [http-bio-8080-exec-5] INFO   nix.dao.UserDao - connected to database
+20.10.2020 11:57:16.546 [http-bio-8080-exec-5] INFO   nix.dao.UserDao - UserDao.java:  method login is executed
+20.10.2020 11:57:24.010 [http-bio-8080-exec-5] INFO   n.s.DoctorListServlet - Execute doGet method in DoctorListServlet
+20.10.2020 11:57:24.018 [http-bio-8080-exec-5] INFO   nix.dao.UserDao - connected to database
+20.10.2020 11:57:24.026 [http-bio-8080-exec-5] INFO   nix.dao.UserDao - UserDao.java:  method findAllByRole is executed

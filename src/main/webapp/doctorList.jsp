@@ -83,15 +83,15 @@
 
 
                     <div style="text-align: center;">
-                        <b><span style="color: red; ">${falseLastname}</span></b>
-                        <b><span style="color: red; ">${falsePhonenumber}</span></b>
-                        <b><span style="color: red; ">${falseDoctor}</span></b>
-                        <b><span style="color: green; ">${successUpdate}</span></b>
-                        <b><span style="color: green; ">${successInsert}</span></b>
-                        <b><span style="color: green; ">${successDelete}</span></b>
-                        <b><span style="color: red; ">${failureUpdate}</span></b>
-                        <b><span style="color: red; ">${failureInsert}</span></b>
-                        <b><span style="color: red; ">${failureDelete}</span></b>
+                        <b><span style="color: red; "> ${falseLastname} </span></b>
+                        <b><span style="color: red; "> ${falsePhonenumber} </span></b>
+                        <b><span style="color: red; "> ${falseDoctor} </span></b>
+                        <b><span style="color: green; "> ${successUpdate} </span></b>
+                        <b><span style="color: green; "> ${successInsert} </span></b>
+                        <b><span style="color: green; "> ${successDelete} </span></b>
+                        <b><span style="color: red; "> ${failureUpdate} </span></b>
+                        <b><span style="color: red; "> ${failureInsert} </span></b>
+                        <b><span style="color: red; "> ${failureDelete} </span></b>
 
                     </div>
 
